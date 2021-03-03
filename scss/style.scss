@@ -1,0 +1,167 @@
+@import "variables";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+	padding: 40px 80px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.not-found {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-family: var(--inconsolata);
+	font-weight: 700;
+	letter-spacing: -0.08em;
+	color: var(--dark-font-1);
+	margin: 0;
+	padding: 0;
+}
+
+.main-container {
+	display: flex;
+	align-items: center;
+}
+
+.container-left {
+	width: 40%;
+}
+
+.container-left img {
+	width: 100%;
+}
+
+.container-right {
+	width: 60%;
+	height: 100%;
+	padding-left: 120px;
+}
+
+.main-h1 {
+	font-size: 64px;
+	font-family: var(--space-mono);
+	font-weight: 700;
+	letter-spacing: -0.035em;
+	color: var(--dark-font-1);
+	line-height: 95px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 36px;
+	max-width: 580px;
+}
+
+.main-p {
+	font-size: 24px;
+	font-family: var(--space-mono);
+	font-weight: 400;
+	letter-spacing: -0.035em;
+	color: var(--dark-font-2);
+	line-height: 36px;
+	margin: 0;
+	padding: 0;
+	max-width: 380px;
+	margin-bottom: 64px;
+}
+
+.main-button {
+	text-transform: uppercase;
+	color: var(--light-font-1);
+	padding: 24px 43px;
+	background-color: var(--dark-font-1);
+	border: solid 1px var(--dark-font-1);
+	font-family: var(--space-mono);
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: -0.035em;
+	cursor: pointer;
+
+	transition: all 200ms ease-in-out;
+}
+
+.main-button:hover {
+	border: solid 1px var(--dark-font-1);
+	background-color: transparent;
+	color: var(--dark-font-1);
+}
+
+footer {
+	text-align: center;
+}
+
+.footer-p {
+	color: var(--light-font-2);
+	font-family: var(--montserrat);
+	font-weight: 500;
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+}
+
+@media only screen and (max-width: 900px) {
+	body {
+		height: unset;
+	}
+
+	.container {
+		padding: 25px;
+	}
+
+	.main-container {
+		flex-direction: column;
+		margin-bottom: 100px;
+	}
+
+	.container-left {
+		width: 100%;
+		// margin: 0 auto 64px;
+	}
+
+	.container-left img {
+		margin-bottom: 64px;
+		// margin: 0 auto 64px;
+		min-width: 80%;
+		max-width: 100%;
+	}
+
+	.container-right {
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.main-h1 {
+		font-size: 48px;
+		line-height: 71px;
+		margin-bottom: 30px;
+		min-width: 80%;
+		max-width: 90%;
+	}
+
+	.main-p {
+		font-size: 18px;
+		line-height: 27px;
+		min-width: 80%;
+		max-width: 90%;
+		margin-bottom: 64px;
+	}
+
+	header {
+		margin-bottom: 64px;
+	}
+}
